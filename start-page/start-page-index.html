@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./start-page-style.css">
+</head>
+<body>
+    <main>
+
+        <button class="btn-parts active-part">1</button>
+        <button class="btn-parts">2</button>
+        <button class="btn-parts">3</button>
+
+        <section class="main-page">
+            <h1>HANG MAN GAME</h1>
+            <canvas width="400" height="300"></canvas>
+            <button class="start-game-btn">Start</button>
+        </section>
+
+        <section class="word-selection">
+            <h1>Type your choosen word</h1>
+            <input class="word-input" type="text" placeholder="Example : Apple" max="20">
+            <button class="submit-word">Next Part</button>
+            <h3 class="first-alert">Please write down your word</h3>
+        </section>
+        
+        <section class="time-selection">
+            <h1>Enter players time</h1>
+            <div class="label-con">
+                <label for="minutes">Minutes :</label>
+                <label for="seconds">Seconds :</label>
+            </div>
+            <div class="inputs-con">
+                <input min="0" max="60" id="minutes" type="number" value="1">
+                <input min="1" max="60" id="seconds" type="number" value="1">
+            </div>
+            <div class="limit-opt">
+                <label class="limit-label" for="limited">Unlimited Time :</label>
+                <input id="limited" type="checkbox">
+            </div>
+            <button class="start-game">Start Game</button>
+            <h3 class="second-alert">Please write down your word</h3>
+        </section>
+
+    </main>
+
+    <section>
+        <h1 class="welcome-tag"></h1>
+    </section>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script type="module" src="./start-page-app.js"></script>
+</body>
+</html>

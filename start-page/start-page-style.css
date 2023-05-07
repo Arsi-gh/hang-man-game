@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    width: 50%;
+    border-right: 4px solid #e8b72e;
+}
+
+.main-page , .word-selection , .time-selection{
+    background-color: #222222;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 50%;
+    background-color: #2b2b2b;
+    display: grid;
+    place-items: center;
+}
+
+section > h1{
+    color: #e8b72e;
+    font-size: xx-large;
+}
+
+.btn-parts{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: none;
+    border: 3px solid #e8b72e;
+    font-size: x-large;
+    left: 48.3%;
+    color: #e8b72e;
+    background: linear-gradient(90deg ,#222222 50% , #2b2b2b 50%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-parts:hover , .active-part{
+    background: #e8b72e;
+    color: #222222;
+}
+
+
+main > button:nth-child(1){
+    top: 30%;
+}
+
+main > button:nth-child(2){
+    top: 50%;
+}
+
+main > button:nth-child(3){
+    top: 70%;
+}
+
+.start-game-btn , .word-selection > button , .time-selection > button{
+    margin-top: 3rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: large;
+    border: 3px solid #e8b72e;
+    background-color: #222222;
+    color: #e8b72e;
+    cursor: pointer;
+}
+
+.start-game-btn:hover , .word-selection > button:hover , .time-selection > button:hover{
+    background-color: #e8b72e;
+    color: #222222;
+}
+
+.main-page > h1 , .word-selection > h1 , .time-selection > h1 {
+    color: #e8b72e;
+    margin-bottom: 3rem;
+}
+
+/* second part page  */
+
+.word-selection{
+    display: none;
+}
+
+.word-selection > input {
+    width: 25rem;
+    padding: 1rem;
+    background-color: #222222;
+    border: 3px solid #e8b72e;
+    color: #e8b72e;
+    font-size: larger;
+    outline: none;
+    border-radius: 3px;
+}
+
+.word-selection > button{
+    justify-self: flex-end;
+}
+
+.word-selection > h3  , .second-alert{
+    font-size: x-large;
+    margin-top: 3rem;
+    color: #f15900;
+    display: none;
+}
+
+/* third part page  */
+
+.time-selection{
+    display: none;
+}
+
+.time-selection > .inputs-con {
+    padding: 1rem;
+    width: 30%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+label{
+    font-size: 20px;
+    margin: 0.8rem;
+    color: #e8b72e;
+}
+
+.time-selection > .inputs-con > input {
+    padding: 1rem 0.5rem 1rem 1rem;
+    font-size: xx-large;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.limit-opt {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.limit-opt > input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
